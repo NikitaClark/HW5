@@ -77,7 +77,7 @@ class Evo:
         nds = reduce(Evo._reduce_nds, self.pop.keys(), self.pop.keys())
         self.pop = {k:self.pop[k] for k in nds}
 
-    # Attendance: 8337
+    
 
     def evolve(self, time_limit=300, dom=100, status=1000):
         """ Run the framework (start evolving solutions)

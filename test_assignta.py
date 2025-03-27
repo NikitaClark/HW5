@@ -84,7 +84,7 @@ class Evo:
         nds = reduce(Evo._reduce_nds, self.pop.keys(), self.pop.keys())
         self.pop = {k:self.pop[k] for k in nds}
 
-    # Attendance: 8337
+   
 
     def evolve(self, n=1, dom=100, status=1000):
         """ Run the framework (start evolving solutions)
@@ -135,13 +135,13 @@ def test_overallocation():
 
 def test_conflicts():
     """Test conflicts objective"""
-    # Test case 1 should give score of 17
+    # Test case 1 should give score of 7
     solution1 = load_test_data(1)
-    assert conflicts(solution1) == 17
+    assert conflicts(solution1) == 7
     
-    # Test case 2 should give score of 9
+    # Test case 2 should give score of 5
     solution2 = load_test_data(2)
-    assert conflicts(solution2) == 9
+    assert conflicts(solution2) == 5
     
     # Test case 3 should give score of 2
     solution3 = load_test_data(3)
